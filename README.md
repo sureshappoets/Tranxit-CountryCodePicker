@@ -7,7 +7,8 @@ To try use
         android:id="@+id/ccp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints" />
+        app:ccp_defaultNameCode="IN" 
+        app:ccp_defaultCode="91"/>
 ```
 ### EditText
 
@@ -17,8 +18,7 @@ To try use
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="phone"
-        android:inputType="phone"
-        tools:ignore="MissingConstraints" />```
+        android:inputType="phone" />
         
 ```
 
