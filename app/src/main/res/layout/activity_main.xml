@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1"
+    tools:ignore="MissingConstraints">
+
+    <com.tranxit.countrycode_picker.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_weight="0.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:layout_weight="0.8"
+        android:id="@+id/phone_number_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="phone"
+        android:inputType="phone"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
